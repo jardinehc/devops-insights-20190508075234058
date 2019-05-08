@@ -38,10 +38,10 @@ ConsoleModule.controller('wcontroller', ['$scope', '$http', '$routeParams', '$ti
                 if(which === 1) {
                     $scope.zip1City = response.data.city;
                     $scope.zip1Weather = response.data.weather;
-                } //else if(which === 2) {
+               // } //else if(which === 2) {
                    // $scope.zip2City = response.data.city;
                    // $scope.zip2Weather = response.data.weather;
-               // } else if(which === 3) {
+                } else if(which === 3) {
                     $scope.zip3City = response.data.city;
                     $scope.zip3Weather = response.data.weather;
                 } else if(which === 4) {
