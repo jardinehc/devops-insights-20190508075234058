@@ -49,13 +49,14 @@ ConsoleModule.controller('wcontroller', ['$scope', '$http', '$routeParams', '$ti
                     $scope.zip4Weather = response.data.weather;
                 } 
             });
-        } else if(data.length > 5) {
+        } else if(isNaN(data) {
             $http({
                 method: "GET",
                 url: 'api.openweathermap.org/data/2.5/weather?q=' + data
             }).then( function(response) {
                 if(which === 1) {
-                    $scope.zip1City = response.data.city;
+                    $scope.zip1City = data;
+                    //$scope.zip1City = response.data.city;
                     $scope.zip1Weather = response.data.weather;
                 } else if(which === 2) {
                     $scope.zip2City = response.data.city;
