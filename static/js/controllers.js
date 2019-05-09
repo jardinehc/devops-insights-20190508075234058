@@ -32,7 +32,6 @@ ConsoleModule.controller('wcontroller', ['$scope', '$http', '$routeParams', '$ti
 
         if(!isNaN(data))
         {
-            
             if(data.length === 5) {
                 $http({
                     method: "GET",
@@ -52,7 +51,8 @@ ConsoleModule.controller('wcontroller', ['$scope', '$http', '$routeParams', '$ti
                         $scope.zip4Weather = response.data.weather;
                     } 
                 });
-        } else if(isNaN(data)) {
+        } else
+        {
             $http({
                 method: "GET",
                 url: 'api.openweathermap.org/data/2.5/weather?q=' + data
