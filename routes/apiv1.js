@@ -11,12 +11,12 @@ var OPENWEATHERURL = "http://api.openweathermap.org/data/2.5/weather?appid=6b7b4
 
 exports.getWeather = function(req, res) {
 	var zip = req.query.zip;
-	var input = req.query.zip;
+	//var input = req.query.zip;
 	if( (zip === null) || (typeof(zip) === 'undefined') ) {
 		return res.status(400).send('zip missing');
 	}
 	
-	if(isNaN(input))
+	if(isNaN(zip))
 	{
 		var aurl = OPENWEATHERURL + '&q=' + zip;
 	}
