@@ -38,9 +38,9 @@ ConsoleModule.controller('wcontroller', ['$scope', '$http', '$routeParams', '$ti
                 if(which === 1) {
                     $scope.zip1City = response.data.city;
                     $scope.zip1Weather = response.data.weather;
-               // } //else if(which === 2) {
-                   // $scope.zip2City = response.data.city;
-                   // $scope.zip2Weather = response.data.weather;
+                } else if(which === 2) {
+                    $scope.zip2City = response.data.city;
+                    $scope.zip2Weather = response.data.weather;
                 } else if(which === 3) {
                     $scope.zip3City = response.data.city;
                     $scope.zip3Weather = response.data.weather;
@@ -49,7 +49,27 @@ ConsoleModule.controller('wcontroller', ['$scope', '$http', '$routeParams', '$ti
                     $scope.zip4Weather = response.data.weather;
                 } 
             });
-        } else {
+        } else if(data.length > 5) {
+            $http({
+                method: "GET",
+                url: 'api.openweathermap.org/data/2.5/weather?q=' + data
+            }).then( function(response) {
+                if(which === 1) {
+                    $scope.zip1City = response.data.city;
+                    $scope.zip1Weather = response.data.weather;
+                } else if(which === 2) {
+                    $scope.zip2City = response.data.city;
+                    $scope.zip2Weather = response.data.weather;
+                } else if(which === 3) {
+                    $scope.zip3City = response.data.city;
+                    $scope.zip3Weather = response.data.weather;
+                } else if(which === 4) {
+                    $scope.zip4City = response.data.city;
+                    $scope.zip4Weather = response.data.weather;
+                } 
+            });
+        }
+        else {
             if(which === 1) {
                     $scope.zip1City = "";
                     $scope.zip1Weather = "";
