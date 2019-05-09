@@ -56,7 +56,7 @@ ConsoleModule.controller('wcontroller', ['$scope', '$http', '$routeParams', '$ti
         {
             $http({
                 method: "GET",
-                url: 'api.openweathermap.org/data/2.5/weather?q=' + data
+                url: '/api.openweathermap.org/data/2.5/weather?q=' + data
             }).then( function(response) {
                 if(which === 1) {
                     $scope.zip1City = data;
