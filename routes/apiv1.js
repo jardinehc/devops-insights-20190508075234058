@@ -16,13 +16,15 @@ exports.getWeather = function(req, res) {
 		return res.status(400).send('zip missing');
 	}
 	
+	var aurl = "";
+	
 	if(isNaN(zip))
 	{
-		var aurl = OPENWEATHERURL + '&q=' + zip;
+		aurl = OPENWEATHERURL + '&q=' + zip;
 	}
 	else
 	{
-		var aurl = OPENWEATHERURL + '&zip=' + zip + ',us';
+		aurl = OPENWEATHERURL + '&zip=' + zip + ',us';
 	}
 
 	request({
