@@ -85,7 +85,7 @@
           	if(err) {
           		assert.fail('Failed to get the response');
           	} else {
-              assert.equal(resp.statusCode, 400);
+              assert.equal(resp.statusCode, 200);
               var pbody = JSON.parse(body);
               assert(pbody.city === 'London', "City name does not match");
               done();
