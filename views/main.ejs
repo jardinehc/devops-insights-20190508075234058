@@ -10,7 +10,12 @@
         <script src="/bower_components/angular-route/angular-route.js"></script>
         <script src="/js/controllers.js"></script>
         
-        
+        <style>
+	  #map {
+	    height: 100%;
+	    position: static;
+	  }
+	</style>
     
     
     </head>
@@ -20,7 +25,7 @@
             <% include includes/mainbody %>
         </div>
         
-        <div id="map" style="position: static; overflow: hidden; height: 100%">
+        <div id="map" style="position: static;">
        
         </div>
     <script>
