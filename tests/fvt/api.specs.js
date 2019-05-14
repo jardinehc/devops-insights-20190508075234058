@@ -89,7 +89,7 @@
           	} else {
               assert.equal(resp.statusCode, 200);
               var pbody = JSON.parse(body);
-              assert(pbody.city === 'London', "City name does not match");
+              assert(pbody.city === 'London', "City name does not match, result gives: " + pbody.city);
               done();
             }
         });
