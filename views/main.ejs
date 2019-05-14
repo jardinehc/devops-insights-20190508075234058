@@ -10,12 +10,7 @@
         <script src="/bower_components/angular-route/angular-route.js"></script>
         <script src="/js/controllers.js"></script>
         
-        <style>
-  #map {
-    height: 100%;
-    position: static;
-  }
-</style>
+        
     
     
     </head>
@@ -25,7 +20,9 @@
             <% include includes/mainbody %>
         </div>
         
-        <div id="map"></div>
+        <div id="map">
+        <div style="style="height: 100%; width: 100%; position: static; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+        </div>
     <script>
       var map;
       function initMap() {
