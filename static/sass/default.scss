@@ -14,7 +14,8 @@ body {
 .scontainer {
     width: 100%;
     height: 90%;
-    position: absolute;
+    //position: absolute;
+	position: static;
     background-color: #3b4b54;
 }
 
@@ -32,7 +33,8 @@ body {
     width: 25em;
     height:100px;
     margin: 0 auto;
-    position: relative;
+    //position: relative;
+	position: static;
 }
 
 .underline {
@@ -126,8 +128,8 @@ body{
 .testCaseRow{
     width: 700px;
 
-    position: relative;
-
+    //position: relative;
+position: static;
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 1px solid #ebebeb;
@@ -152,7 +154,8 @@ body{
     width: 40px;
     height: 40px;
 
-    position: absolute;
+	position: static;
+    //position: absolute;
     top:50%;
     margin-top: -21px;
 }
@@ -188,8 +191,8 @@ body{
 .coverageRow{
     width: 700px;
 
-    position: relative;
-
+   // position: relative;
+position: static;
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 1px solid #ebebeb;
