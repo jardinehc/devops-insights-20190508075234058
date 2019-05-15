@@ -1,8 +1,8 @@
 /* CSS declarations go here */
 
 
-#map {
-	position: static;
+#map[style] {
+	position: static !important;
 	height: 100%;
 }
 
