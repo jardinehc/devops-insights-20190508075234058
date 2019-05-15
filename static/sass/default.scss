@@ -1,5 +1,12 @@
 /* CSS declarations go here */
 
+
+#map {
+	position: static;
+	height: 100%;
+}
+
+
 body {
     margin: 0px;
 }
@@ -16,7 +23,8 @@ body {
     width: 25em;
     height:100px;
     margin: 0 auto;
-    position: relative;
+    /*position: relative;*/
+	position: static;
 }
 
 .north {
@@ -236,7 +244,4 @@ td {
 	display: none;
 }
 
-#map {
-	position: static;
-	height: 100%;
-}
+
