@@ -235,3 +235,8 @@ td {
 .x.axis path {
 	display: none;
 }
+
+#map {
+	position: static;
+	height: 100%;
+}
